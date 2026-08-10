@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, ContextTyp
 import os
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHANNEL = "@amazonprimedeal"
+CHANNEL = "@amazoneprimedeal"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("✅ Bot Online!\n\nSend me an Amazon affiliate link.")
